@@ -10,6 +10,7 @@ public class Main {
 		};
 
 		System.out.println(search(arr, 245));
+		System.out.println(Arrays.toString(searchIndex(arr, 245)));
 	}
 
 	public static boolean search(int[][] arr, int target) {
@@ -22,5 +23,16 @@ public class Main {
 		}
 
 		return false;
+	}
+
+	public static int[] searchIndex(int[][] arr, int target) {
+		for (int row = 0; row < arr.length; row++) {
+			for (int col = 0; col < arr[row].length; col++) {
+				if (arr[row][col] == target) {
+					return new int[] {row, col};
+				}
+			}
+		}
+		return new int[] {-1, -1};
 	}
 }
