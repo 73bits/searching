@@ -9,7 +9,7 @@ public class CeilingFloor {
 		// might be possible that index[arr.length - 1] is smaller that target
 		if (target > arr[arr.length - 1]) return -1;
 		int start = 0, end = arr.length - 1;
-		while (start < end) {
+		while (start <= end) {
 			int mid = (start + end) / 2;
 			if (arr[mid] == target) return mid;
 			if (arr[mid] < target) start = mid + 1;
