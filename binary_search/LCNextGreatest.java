@@ -6,6 +6,9 @@
 */
 public class LCNextGreatest {
 	public static void main(String ... args) {
+		char[] letters = new char[] { 'c', 'f', 'j', 'm', 'w', 'x' };
+		char target = 'j';
+		System.out.println(nextGreatestLetter(letters, target));
 	}
 
 	private static char nextGreatestLetter(char[] letters, char target) {
