@@ -6,9 +6,14 @@
  */
 public class FirstLastLC {
 	public static void main(String ... args) {
+		int[] nums = new int[] {5, 7, 7, 8, 8, 10};
+		int target = 7;
+		System.out.println(java.util.Arrays.toString(firstAndLastPosition(nums, target)));
 	}
 
 	private static int[] firstAndLastPosition(int[] nums, int target) {
+		int[] ans = new int[] {index(nums, target, true), index(nums, target, false)};
+		return ans;
 	}
 
 	// if target is found
