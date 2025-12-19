@@ -4,6 +4,9 @@
 */
 public class InfiniteArray {
 	public static void main(String ... args) {
+		int[] arr = new int[] { 2, 3, 7, 9, 26, 73, 119 };
+		int target = 120;
+		System.out.println("target index: " + searchInfiniteArray(arr, target));
 	}
 
 	private static int searchInfiniteArray(int[] arr, int target) {
