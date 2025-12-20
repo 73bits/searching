@@ -5,6 +5,8 @@
 */
 public class MountainArrayLC {
 	public static void main(String ... args) {
+		System.out.println(searchPeakIndex(new int[] { 0, 1, 0 })); // 1
+		System.out.println(searchPeakIndex(new int[] { 0, 1, 3, 5, 8, 6, 4, 2 })); // 4
 	}
 
 	private static int searchPeakIndex(int[] arr) {
