@@ -6,4 +6,14 @@
 public class MountainArrayLC {
 	public static void main(String ... args) {
 	}
+
+	private static int searchPeakIndex(int[] arr) {
+		int start = 0, end = arr.length - 1, ans = -1;
+		while (start < end) {
+			int mid = (start + end) / 2;
+			if (arr[mid] > arr[mid + 1]) end = mid; // in decreasing part of the array
+			else start = mid + 1; // in increasing part of the array
+		}
+		return start; // or end because start = end
+	}
 }
