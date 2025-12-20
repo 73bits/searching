@@ -1,6 +1,6 @@
 /*
    search an element in a sorted array of infinite numbers
-   arr.lenght is nor known
+   arr.length is not known
 */
 public class InfiniteArray {
 	public static void main(String ... args) {
