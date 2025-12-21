@@ -45,5 +45,4 @@ public class MountainArrayLC {
 		}
 		return -1;
 	}
-
 }
