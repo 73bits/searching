@@ -18,4 +18,7 @@ public class MountainArrayLC {
 		}
 		return start; // or end because start = end
 	}
+
+	private static int searchElement(int arr[], int target) {
+	}
 }
