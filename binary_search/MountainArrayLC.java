@@ -2,6 +2,11 @@
    find peak index in mountain array: arr.length >= 3, O(log n)
    arr = [0, 1, 0] output: 1
    arr = [0, 2, 1] output: 1
+
+   return the minimum index
+   arr = [ 0, 1, 0 ] target: 0 output: 0
+   arr = [ 0, 1, 3, 5, 8, 6, 4, 2 ] target: 2 output: 7
+   arr = [ 0, 1, 3, 5, 8, 6, 4, 2 ] target: 7 output: -1
 */
 public class MountainArrayLC {
 	public static void main(String ... args) {
@@ -23,6 +28,7 @@ public class MountainArrayLC {
 		return start; // or end because start = end
 	}
 
+	// return the minimum index of the target in a mountain array
 	private static int searchElement(int arr[], int target) {
 		int peakIndex = searchPeakIndex(arr);
 		int firstTry = orderAgnosticBS(arr, target, 0, peakIndex);
