@@ -1,15 +1,12 @@
 - string
 - array
 - linkedlist
-
 - stacks
 - queue
-
-- sorting { bubble, selection, insertion, cycle, merge, quick, heap }
+- sorting { bubble, selection, insertion, cycle, merge, quick, heap, bucket, radix, tim, shell }
 - linearsearch
 - binarysearch
 - hashmap
-
 - binarytree
 - bst
 - avl
